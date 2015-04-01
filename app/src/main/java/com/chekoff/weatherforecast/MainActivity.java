@@ -17,7 +17,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -49,7 +48,7 @@ public class MainActivity extends ActionBarActivity {
                 ColorDrawable(Color.parseColor("#ffffff")));
         getSupportActionBar();
 
-        sharedPref = this.getSharedPreferences("com.chekoff.weatherforecast", Context.MODE_PRIVATE);
+        sharedPref = this.getSharedPreferences("com.chekoff.weatherforecast ", Context.MODE_PRIVATE);
 
 
     }
