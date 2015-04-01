@@ -1,0 +1,41 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/set_locations">
+
+        <Preference
+            android:title="@string/set_current_location"
+            android:key="set_current_location_id"
+            android:summary="This is your current location"
+            android:defaultValue="" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/set_forecast">
+
+        <EditTextPreference
+            android:defaultValue="5"
+            android:dialogTitle="@string/set_number_of_days_dialog"
+            android:inputType="number"
+            android:key="set_forecast_days"
+            android:summary=""
+            android:title="@string/set_number_of_days_dialog" />
+
+        <ListPreference
+            android:defaultValue="@string/set_units_default"
+            android:key="set_units"
+            android:summary=""
+            android:entries="@array/set_units"
+            android:title="@string/set_units_title"
+            android:entryValues="@array/set_units" />
+
+        <ListPreference
+            android:defaultValue=""
+            android:key="set_units_units"
+            android:summary=""
+            android:entries="@array/set_units_metric"
+            android:title="@string/set_units_units"
+            android:entryValues="@array/set_units_metric" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
